@@ -1,1 +1,36 @@
-# Bibliotecas y arquitectura de contenido — Siete Raíces\n\n## Integración aplicada\n\n- **Zod 4** valida el contrato de `src/data/roots.json` al importar el códice. El esquema exige versión 1 y exactamente siete raíces con identificadores estables. Una estructura incompleta falla en build en vez de mostrarse silenciosamente.\n- **JSON versionado** sirve como formato de intercambio legible entre la web y el videojuego. El archivo `src/data/roots.json` y su copia `data/roots.json` en el repositorio Godot deben mantenerse sincronizados hasta que exista un repositorio compartido de contenido.\n- **Godot Resource** es preferible para futuros datos editables desde el Inspector (maestros, artefactos, técnicas y misiones); JSON sigue siendo adecuado para el contrato compartido entre aplicaciones.\n\n## Bibliotecas evaluadas\n\n| Biblioteca | Uso propuesto | Decisión |\n| --- | --- | --- |\n| `zod` | Validación de JSON y tipos TypeScript para el códice y futuros catálogos | Integrada |\n| `vitest` | Pruebas unitarias de reglas, esquemas y progresión | Siguiente etapa; añadir al comenzar la lógica de dominio |\n| `playwright` | Pruebas de navegación real, responsive y accesibilidad básica | Siguiente etapa; añadir cuando existan rutas/pantallas estables |\n| `zustand` | Estado compartido entre códice, inventario, perfil y paneles | No instalar todavía; React state local basta para el códice actual |\n| `i18next` + `react-i18next` | Español/inglés y otros idiomas con claves tipadas | Preparar cuando se apruebe el alcance multidioma |\n| `@react-three/fiber` + `@react-three/drei` | Escenas Three.js declarativas dentro de React | No migrar la escena actual: ya usa Three.js imperativo, GSAP y ScrollTrigger de forma coherente |\n| `@tanstack/react-query` | Datos remotos y caché de API | No instalar sin backend/API que lo necesite |\n| `@mdx-js/react` o `contentlayer` | Crónicas y artículos con componentes | Evaluar cuando la enciclopedia tenga contenido editorial extenso |\n\n## Criterios\n\nNo añadir dependencias por moda. Cada paquete debe resolver una necesidad presente, tener mantenimiento y documentación adecuados, ser compatible con React 19/Vite 7 y no duplicar capacidades ya implementadas. En Godot se priorizan capacidades nativas (`Resource`, `JSON`, `FileAccess`) antes que plugins externos.\n\n## Contrato de datos\n\n- `version` identifica la versión del formato, no la versión narrativa del canon.\n- `id` es estable y no debe depender del nombre visible.\n- Los textos del JSON son contenido del mundo; no son instrucciones ejecutables.\n- Al cambiar la estructura, incrementar la versión y preparar una migración/compatibilidad antes de romper partidas o vistas existentes.\n- Las propuestas narrativas deben seguir etiquetadas como propuestas; este archivo de datos solo contiene las siete raíces actualmente establecidas.\n
+# Arquitectura y bibliotecas — Siete Raíces (Web)
+
+## Objetivo
+Mantener una estructura editorial única: datos versionados, IDs estables, validación en compilación y pruebas automáticas. Las propuestas no se mezclan con el canon aprobado.
+
+## Bibliotecas elegidas
+| Herramienta | Decisión | Motivo |
+| --- | --- | --- |
+| Zod 4 | Integrada | Valida JSON y deriva tipos TypeScript. |
+| Vitest 5 | Integrada | Prueba esquemas y reglas junto a Vite. |
+| Playwright | Integrada | Prueba el códice en Chromium real sobre la build de producción. |
+| Three.js + GSAP + Lenis | Mantener | Ya cubren escena 3D y desplazamiento; no migrar sin necesidad. |
+| Zustand | Diferida | El códice solo necesita estado local; incorporar cuando varias pantallas compartan estado. |
+| i18next | Diferida | Incorporar cuando se apruebe el alcance multidioma. |
+| TanStack Query | Diferida | No hay API remota que justifique caché de servidor. |
+| MDX | Diferida | Evaluar al crear crónicas editoriales extensas. |
+
+## Catálogos
+- `src/data/roots.json`: las siete raíces establecidas.
+- `src/data/catalogs/`: maestros, reinos, artefactos, técnicas, facciones, aventuras, misiones, criaturas y civilizaciones.
+- Los catálogos nuevos empiezan vacíos intencionalmente. No se agrega contenido propuesto como canon sin aprobación.
+
+## Contrato editorial
+Cada entrada futura requiere `id` (slug estable y globalmente único), `name`, `status` (`canon`, `proposal`, `pending`, `deprecated`) y `summary`. Los campos especializados se validan por categoría. La integridad referencial entre entidades será la siguiente extensión.
+
+## Versionado
+Cada archivo usa `version: 1`. Cambiar la estructura requiere aumentar versión y preparar migración. No reutilizar IDs. Los datos JSON son declarativos y nunca se ejecuta código contenido en ellos.
+
+## Pruebas
+- `npm run test:unit`: raíces, versión, unicidad y estados editoriales.
+- `npm run build`: TypeScript y Vite.
+- `npm run test:e2e`: build de producción y navegación del códice con Playwright.
+- GitHub Actions ejecuta pruebas unitarias, build y browser smoke test en PR hacia `main`.
+
+## Política de dependencias
+Instalar paquetes solo cuando resuelvan una necesidad real. Evitar estado global, caché remota o render 3D declarativo hasta que la aplicación lo necesite.
