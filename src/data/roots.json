@@ -1,0 +1,61 @@
+{
+  "version": 1,
+  "roots": [
+    {
+      "id": "origin",
+      "name": "Origen",
+      "mark": "I",
+      "essence": "El primer impulso",
+      "description": "La raíz que inicia procesos, despierta posibilidades y da forma al comienzo de aquello que aún no existe.",
+      "path": "Creación · despertar · potencial"
+    },
+    {
+      "id": "void",
+      "name": "Vacío",
+      "mark": "II",
+      "essence": "Lo que existe entre todo",
+      "description": "No representa simplemente la nada: es el espacio de lo no definido, donde las fronteras pueden perder su significado.",
+      "path": "Silencio · ausencia · disolución"
+    },
+    {
+      "id": "time",
+      "name": "Tiempo",
+      "mark": "III",
+      "essence": "El curso de las eras",
+      "description": "Rige los ciclos, la sucesión y las huellas que deja cada acontecimiento en la Trama Primordial.",
+      "path": "Ciclos · memoria · causalidad"
+    },
+    {
+      "id": "space",
+      "name": "Espacio",
+      "mark": "IV",
+      "essence": "La estructura de los mundos",
+      "description": "Conecta y separa territorios, dimensiones y realidades. Comprenderlo permite interpretar las distancias de otra manera.",
+      "path": "Distancia · conexión · dimensión"
+    },
+    {
+      "id": "life",
+      "name": "Vida",
+      "mark": "V",
+      "essence": "El impulso de crecer",
+      "description": "Sostiene el cambio, la adaptación y la capacidad de los seres para transformarse y continuar.",
+      "path": "Crecimiento · adaptación · renovación"
+    },
+    {
+      "id": "death",
+      "name": "Muerte",
+      "mark": "VI",
+      "essence": "El umbral de los ciclos",
+      "description": "Cierra etapas y devuelve lo que ya cumplió su función. No es una fuerza maligna ni una recompensa.",
+      "path": "Final · tránsito · retorno"
+    },
+    {
+      "id": "consciousness",
+      "name": "Conciencia",
+      "mark": "VII",
+      "essence": "La mirada que comprende",
+      "description": "Permite percibir patrones, interpretar la Trama y cuestionar aquello que otros aceptan como absoluto.",
+      "path": "Percepción · voluntad · comprensión"
+    }
+  ]
+}
