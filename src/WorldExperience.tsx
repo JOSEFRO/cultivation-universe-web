@@ -7,14 +7,14 @@ import Lenis from 'lenis'
 gsap.registerPlugin(ScrollTrigger)
 
 const chapters = [
-  { id: 'origen', number: '01', title: 'El Origen', subtitle: 'Antes de que existieran los mundos', text: 'Siete principios despertaron en la Trama Primordial. De su resonancia nació todo lo que alguna vez tuvo nombre.', tag: 'PRÓLOGO · LA TRAMA PRIMORDIAL' },
-  { id: 'mortales', number: '02', title: 'Continentes Mortales', subtitle: 'Donde comienzan los caminos', text: 'Ciudades, montañas y territorios separados por océanos. Aquí, el primer paso de un cultivador puede cambiar su destino.', tag: 'LOS PRIMEROS MUNDOS' },
-  { id: 'sectas', number: '03', title: 'Dominio de las Sectas', subtitle: 'El conocimiento también tiene fronteras', text: 'Imperios, sectas y linajes protegen técnicas, secretos y territorios. Ninguna facción conoce toda la verdad.', tag: 'PODER · CULTURA · ALIANZAS' },
-  { id: 'antiguos', number: '04', title: 'Mar de los Antiguos', subtitle: 'Las eras no desaparecen por completo', text: 'Bajo aguas inmóviles descansan ruinas y herencias de civilizaciones que existieron antes de los registros conocidos.', tag: 'HERENCIAS OLVIDADAS' },
-  { id: 'cielos', number: '05', title: 'Cielos Fragmentados', subtitle: 'Mundos que ya no comparten horizonte', text: 'Fragmentos de realidad flotan separados. Cruzarlos exige algo más que fuerza: comprensión del espacio y sus leyes.', tag: 'LOS LÍMITES DEL MUNDO' },
-  { id: 'raices', number: '06', title: 'Dominio de las Raíces', subtitle: 'La fuente de los siete principios', text: 'Origen, Vacío, Tiempo, Espacio, Vida, Muerte y Conciencia. Cada raíz revela una parte de la Trama, nunca su totalidad.', tag: 'SIETE PRINCIPIOS' },
-  { id: 'vacio', number: '07', title: 'Frontera del Vacío', subtitle: 'Lo desconocido también observa', text: 'Más allá de los mapas, las certezas pierden significado. Hay presencias cuya verdadera naturaleza permanece oculta.', tag: 'TERRITORIO NO CARTOGRAFIADO' },
-  { id: 'primordial', number: '08', title: 'Origen Primordial', subtitle: 'Toda respuesta abre otra pregunta', text: 'En el origen de la Trama permanece el misterio de la Primera Ruptura… y aquello que pudo sobrevivirla.', tag: 'EL MISTERIO CENTRAL' },
+  { id: 'origen', image: 'https://images.unsplash.com/photo-1462331940025-496dfbfc7564?auto=format&fit=crop&w=1800&q=85', number: '01', title: 'El Origen', subtitle: 'Antes de que existieran los mundos', text: 'Siete principios despertaron en la Trama Primordial. De su resonancia nació todo lo que alguna vez tuvo nombre.', tag: 'PRÓLOGO · LA TRAMA PRIMORDIAL' },
+  { id: 'mortales', image: 'https://images.unsplash.com/photo-1470770841072-f978cf4d019e?auto=format&fit=crop&w=1800&q=85', number: '02', title: 'Continentes Mortales', subtitle: 'Donde comienzan los caminos', text: 'Ciudades, montañas y territorios separados por océanos. Aquí, el primer paso de un cultivador puede cambiar su destino.', tag: 'LOS PRIMEROS MUNDOS' },
+  { id: 'sectas', image: 'https://images.unsplash.com/photo-1518709268805-4e9042af9f23?auto=format&fit=crop&w=1800&q=85', number: '03', title: 'Dominio de las Sectas', subtitle: 'El conocimiento también tiene fronteras', text: 'Imperios, sectas y linajes protegen técnicas, secretos y territorios. Ninguna facción conoce toda la verdad.', tag: 'PODER · CULTURA · ALIANZAS' },
+  { id: 'antiguos', image: 'https://images.unsplash.com/photo-1500375592092-40eb2168fd21?auto=format&fit=crop&w=1800&q=85', number: '04', title: 'Mar de los Antiguos', subtitle: 'Las eras no desaparecen por completo', text: 'Bajo aguas inmóviles descansan ruinas y herencias de civilizaciones que existieron antes de los registros conocidos.', tag: 'HERENCIAS OLVIDADAS' },
+  { id: 'cielos', image: 'https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=1800&q=85', number: '05', title: 'Cielos Fragmentados', subtitle: 'Mundos que ya no comparten horizonte', text: 'Fragmentos de realidad flotan separados. Cruzarlos exige algo más que fuerza: comprensión del espacio y sus leyes.', tag: 'LOS LÍMITES DEL MUNDO' },
+  { id: 'raices', image: 'https://images.unsplash.com/photo-1511497584788-876760111969?auto=format&fit=crop&w=1800&q=85', number: '06', title: 'Dominio de las Raíces', subtitle: 'La fuente de los siete principios', text: 'Origen, Vacío, Tiempo, Espacio, Vida, Muerte y Conciencia. Cada raíz revela una parte de la Trama, nunca su totalidad.', tag: 'SIETE PRINCIPIOS' },
+  { id: 'vacio', image: 'https://images.unsplash.com/photo-1446776811953-b23d57bd21aa?auto=format&fit=crop&w=1800&q=85', number: '07', title: 'Frontera del Vacío', subtitle: 'Lo desconocido también observa', text: 'Más allá de los mapas, las certezas pierden significado. Hay presencias cuya verdadera naturaleza permanece oculta.', tag: 'TERRITORIO NO CARTOGRAFIADO' },
+  { id: 'primordial', image: 'https://images.unsplash.com/photo-1534796636912-3b95b3ab5986?auto=format&fit=crop&w=1800&q=85', number: '08', title: 'Origen Primordial', subtitle: 'Toda respuesta abre otra pregunta', text: 'En el origen de la Trama permanece el misterio de la Primera Ruptura… y aquello que pudo sobrevivirla.', tag: 'EL MISTERIO CENTRAL' },
 ]
 
 function createWorld(scene: THREE.Scene) {
@@ -115,6 +115,17 @@ export default function WorldExperience() {
       { x: 0, y: -25, z: 6.5, rx: 2.0 },
     ]
     if (!reduced) {
+      gsap.utils.toArray<HTMLElement>('.chapter-art').forEach((panel) => {
+        const image = panel.querySelector<HTMLElement>('.chapter-art-image')
+        gsap.fromTo(panel, { scale: 0.76, borderRadius: '30px' }, {
+          scale: 1.04, borderRadius: '8px', ease: 'none',
+          scrollTrigger: { trigger: panel, start: 'top 92%', end: 'bottom 8%', scrub: 1.15 },
+        })
+        if (image) gsap.fromTo(image, { scale: 1.28, yPercent: -7 }, {
+          scale: 1, yPercent: 7, ease: 'none',
+          scrollTrigger: { trigger: panel, start: 'top bottom', end: 'bottom top', scrub: 1 },
+        })
+      })
       chapters.forEach((chapter, index) => {
         const next = positions[index + 1]
         if (!next) return
@@ -172,6 +183,11 @@ export default function WorldExperience() {
         </section>
         {chapters.map((chapter, index) => (
           <section className={`world-chapter ${index % 2 ? 'align-right' : 'align-left'}`} id={chapter.id} key={chapter.id}>
+            <div className="chapter-art" aria-hidden="true">
+              <div className="chapter-art-image" style={{ backgroundImage: `url(${chapter.image})` }} />
+              <div className="chapter-art-shade" />
+              <span className="art-coordinate">TRAMA PRIMORDIAL · {chapter.number}</span>
+            </div>
             <div className="chapter-copy">
               <span className="chapter-tag">{chapter.tag}</span>
               <span className="chapter-number">{chapter.number} / 08</span>
