@@ -3,6 +3,7 @@ import * as THREE from 'three'
 import gsap from 'gsap'
 import { ScrollTrigger } from 'gsap/ScrollTrigger'
 import Lenis from 'lenis'
+import RootCodex from './RootCodex'
 
 gsap.registerPlugin(ScrollTrigger)
 
@@ -194,7 +195,7 @@ export default function WorldExperience() {
               <h2>{chapter.title}</h2>
               <h3>{chapter.subtitle}</h3>
               <p>{chapter.text}</p>
-              {index === 5 && <div className="root-chips"><span>ORIGEN</span><span>VACÍO</span><span>TIEMPO</span><span>ESPACIO</span><span>VIDA</span><span>MUERTE</span><span>CONCIENCIA</span></div>}
+              {index === 5 && <RootCodex />}
             </div>
           </section>
         ))}
