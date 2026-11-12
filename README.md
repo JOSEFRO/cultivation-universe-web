@@ -3,7 +3,7 @@
 Plataforma oficial de exploración y documentación de un universo original de fantasía y cultivo.
 
 ## Estado
-**Prototipo inicial en desarrollo.** Esta primera entrega establece la identidad del proyecto, la navegación principal y el modelo inicial del mundo.
+**Prototipo interactivo en desarrollo.** La experiencia incluye una escena 3D procedural, capítulos narrativos y un códice seleccionable de las siete raíces.
 
 ## Contenido previsto
 - Enciclopedia de reinos, raíces, facciones, técnicas y personajes.
