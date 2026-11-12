@@ -21,16 +21,24 @@ Mantener una estructura editorial única: datos versionados, IDs estables, valid
 - Los catálogos nuevos empiezan vacíos intencionalmente. No se agrega contenido propuesto como canon sin aprobación.
 
 ## Contrato editorial
-Cada entrada futura requiere `id` (slug estable y globalmente único), `name`, `status` (`canon`, `proposal`, `pending`, `deprecated`) y `summary`. Los campos especializados se validan por categoría. La integridad referencial entre entidades será la siguiente extensión.
+Cada entrada futura requiere `id` (slug estable y globalmente único), `name`, `status` (`canon`, `proposal`, `pending`, `deprecated`) y `summary`. Los campos especializados se validan por categoría. Zod comprueba IDs globales y referencias de maestros a raíces, reinos, facciones y técnicas; también comprueba requisitos de técnicas y relaciones de facciones.
 
 ## Versionado
 Cada archivo usa `version: 1`. Cambiar la estructura requiere aumentar versión y preparar migración. No reutilizar IDs. Los datos JSON son declarativos y nunca se ejecuta código contenido en ellos.
 
 ## Pruebas
-- `npm run test:unit`: raíces, versión, unicidad y estados editoriales.
+- `npm run test:unit`: raíces, versión, unicidad, estado editorial y referencias.
 - `npm run build`: TypeScript y Vite.
 - `npm run test:e2e`: build de producción y navegación del códice con Playwright.
 - GitHub Actions ejecuta pruebas unitarias, build y browser smoke test en PR hacia `main`.
+
+## Documentación oficial consultada
+- [Zod — Basic usage](https://zod.dev/basics) y [API](https://zod.dev/api).
+- [Vitest — Getting started](https://vitest.dev/guide/).
+- [Playwright — Browser testing](https://playwright.dev/docs/intro) y [accessibility testing](https://playwright.dev/docs/accessibility-testing).
+- [React Three Fiber — Documentation](https://r3f.docs.pmnd.rs/).
+- [Zustand — Documentation](https://zustand.docs.pmnd.rs/).
+- [React i18next — Documentation](https://react.i18next.com/).
 
 ## Política de dependencias
 Instalar paquetes solo cuando resuelvan una necesidad real. Evitar estado global, caché remota o render 3D declarativo hasta que la aplicación lo necesite.
