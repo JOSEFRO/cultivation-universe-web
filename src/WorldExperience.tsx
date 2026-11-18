@@ -8,13 +8,13 @@ gsap.registerPlugin(ScrollTrigger)
 
 const chapters = [
   { id: 'origen', image: 'https://images.unsplash.com/photo-1462331940025-496dfbfc7564?auto=format&fit=crop&w=1800&q=85', number: '01', title: 'El Origen', subtitle: 'Antes de que existieran los mundos', text: 'Siete principios despertaron en la Trama Primordial. De su resonancia nació todo lo que alguna vez tuvo nombre.', tag: 'PRÓLOGO · LA TRAMA PRIMORDIAL' },
-  { id: 'mortales', image: 'https://images.unsplash.com/photo-1470770841072-f978cf4d019e?auto=format&fit=crop&w=1800&q=85', number: '02', title: 'Continentes Mortales', subtitle: 'Donde comienzan los caminos', text: 'Ciudades, montañas y territorios separados por océanos. Aquí, el primer paso de un cultivador puede cambiar su destino.', tag: 'LOS PRIMEROS MUNDOS' },
-  { id: 'sectas', image: 'https://images.unsplash.com/photo-1518709268805-4e9042af9f23?auto=format&fit=crop&w=1800&q=85', number: '03', title: 'Dominio de las Sectas', subtitle: 'El conocimiento también tiene fronteras', text: 'Imperios, sectas y linajes protegen técnicas, secretos y territorios. Ninguna facción conoce toda la verdad.', tag: 'PODER · CULTURA · ALIANZAS' },
-  { id: 'antiguos', image: 'https://images.unsplash.com/photo-1500375592092-40eb2168fd21?auto=format&fit=crop&w=1800&q=85', number: '04', title: 'Mar de los Antiguos', subtitle: 'Las eras no desaparecen por completo', text: 'Bajo aguas inmóviles descansan ruinas y herencias de civilizaciones que existieron antes de los registros conocidos.', tag: 'HERENCIAS OLVIDADAS' },
+  { id: 'mortales', image: 'https://images.unsplash.com/photo-1470770841072-f978cf4d019e?auto=format&fit=crop&w=1800&q=85', number: '02', title: 'Los Reinos Mortales', subtitle: 'Donde comienzan los caminos', text: 'Fortalezas, puertos, ciudades libres y cordilleras separadas por mares inmensos. Quien despierta una Raíz descubre que el mundo es mucho mayor que su tierra natal.', tag: 'LOS PRIMEROS REINOS' },
+  { id: 'sectas', image: 'https://images.unsplash.com/photo-1518709268805-4e9042af9f23?auto=format&fit=crop&w=1800&q=85', number: '03', title: 'Reinos y Órdenes', subtitle: 'El conocimiento también tiene fronteras', text: 'Casas soberanas, órdenes juramentadas y gremios de exploradores protegen sus archivos, reliquias y territorios. Ninguna facción conoce toda la verdad.', tag: 'PODER · JURAMENTOS · ALIANZAS' },
+  { id: 'antiguos', image: 'https://images.unsplash.com/photo-1500375592092-40eb2168fd21?auto=format&fit=crop&w=1800&q=85', number: '04', title: 'Mar de los Antiguos', subtitle: 'Las eras no desaparecen por completo', text: 'Bajo las mareas descansan fortalezas sumergidas, navíos petrificados y vestigios de civilizaciones anteriores a los primeros registros.', tag: 'HERENCIAS OLVIDADAS' },
   { id: 'cielos', image: 'https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=1800&q=85', number: '05', title: 'Cielos Fragmentados', subtitle: 'Mundos que ya no comparten horizonte', text: 'Fragmentos de realidad flotan separados. Cruzarlos exige algo más que fuerza: comprensión del espacio y sus leyes.', tag: 'LOS LÍMITES DEL MUNDO' },
-  { id: 'raices', image: 'https://images.unsplash.com/photo-1511497584788-876760111969?auto=format&fit=crop&w=1800&q=85', number: '06', title: 'Dominio de las Raíces', subtitle: 'La fuente de los siete principios', text: 'Origen, Vacío, Tiempo, Espacio, Vida, Muerte y Conciencia. Cada raíz revela una parte de la Trama, nunca su totalidad.', tag: 'SIETE PRINCIPIOS' },
-  { id: 'vacio', image: 'https://images.unsplash.com/photo-1446776811953-b23d57bd21aa?auto=format&fit=crop&w=1800&q=85', number: '07', title: 'Frontera del Vacío', subtitle: 'Lo desconocido también observa', text: 'Más allá de los mapas, las certezas pierden significado. Hay presencias cuya verdadera naturaleza permanece oculta.', tag: 'TERRITORIO NO CARTOGRAFIADO' },
-  { id: 'primordial', image: 'https://images.unsplash.com/photo-1534796636912-3b95b3ab5986?auto=format&fit=crop&w=1800&q=85', number: '08', title: 'Origen Primordial', subtitle: 'Toda respuesta abre otra pregunta', text: 'En el origen de la Trama permanece el misterio de la Primera Ruptura… y aquello que pudo sobrevivirla.', tag: 'EL MISTERIO CENTRAL' },
+  { id: 'raices', image: 'https://images.unsplash.com/photo-1511497584788-876760111969?auto=format&fit=crop&w=1800&q=85', number: '06', title: 'Los Siete Dominios', subtitle: 'Las leyes que sostienen la existencia', text: 'Origen, Vacío, Tiempo, Espacio, Vida, Muerte y Conciencia son las siete Raíces primordiales. Cada una expresa una ley de la Trama; ninguna contiene por sí sola toda la verdad.', tag: 'SIETE PRINCIPIOS' },
+  { id: 'vacio', image: 'https://images.unsplash.com/photo-1446776811953-b23d57bd21aa?auto=format&fit=crop&w=1800&q=85', number: '07', title: 'Frontera del Vacío', subtitle: 'Lo desconocido también observa', text: 'Más allá de las cartas conocidas, la realidad se vuelve incierta. Expediciones enteras han regresado con mapas imposibles y relatos que nadie logra confirmar.', tag: 'TERRITORIO NO CARTOGRAFIADO' },
+  { id: 'primordial', image: 'https://images.unsplash.com/photo-1534796636912-3b95b3ab5986?auto=format&fit=crop&w=1800&q=85', number: '08', title: 'Origen Primordial', subtitle: 'Toda respuesta abre otra pregunta', text: 'En el corazón de la Trama permanece el enigma de la Primera Ruptura: el instante en que las siete leyes se separaron y algo quedó al otro lado.', tag: 'EL MISTERIO CENTRAL' },
 ]
 
 function createWorld(scene: THREE.Scene) {
@@ -177,7 +177,7 @@ export default function WorldExperience() {
         <section className="world-hero" id="inicio">
           <div className="hero-kicker">UNA EXPERIENCIA A TRAVÉS DE LA TRAMA PRIMORDIAL</div>
           <h1>El destino no se<br /><em>hereda.</em> Se conquista.</h1>
-          <p>Siete raíces sostienen la existencia. Infinitos caminos esperan a quienes se atrevan a comprenderlas.</p>
+          <p>Siete Raíces sostienen la existencia. Reinos enteros nacieron bajo su influencia; solo quienes aprenden a escucharlas pueden alterar su propio destino.</p>
           <a className="enter-world" href="#origen">DESCENDER AL UNIVERSO <span>↓</span></a>
           <div className="scroll-cue"><span /> DESLIZA PARA DESCUBRIR</div>
         </section>
@@ -209,14 +209,14 @@ export default function WorldExperience() {
               <span className="portal-index">01 / ATLAS</span>
               <div className="portal-symbol">✧</div>
               <h3>Ocho capítulos.<br />Una sola Trama.</h3>
-              <p>Recorre el origen, los continentes mortales, las sectas, los mares antiguos y los dominios que aún no aparecen en los mapas.</p>
+              <p>Recorre el origen, los reinos mortales, las órdenes juramentadas, los mares antiguos y los territorios que aún no aparecen en los mapas.</p>
               <a href="#origen">VOLVER A LAS CRÓNICAS ↗</a>
             </article>
             <article className="portal-card portal-card-roots">
               <span className="portal-index">02 / COSMOLOGÍA</span>
               <div className="portal-symbol">◈</div>
               <h3>Siete raíces.<br />Siete principios.</h3>
-              <p>Origen, Vacío, Tiempo, Espacio, Vida, Muerte y Conciencia: fuerzas que dan forma a las leyes de este universo.</p>
+              <p>Origen, Vacío, Tiempo, Espacio, Vida, Muerte y Conciencia: siete leyes primordiales que dan forma a este universo.</p>
               <a href="#raices">DESCUBRIR LOS PRINCIPIOS ↗</a>
             </article>
             <article className="portal-card portal-card-game">
@@ -242,7 +242,7 @@ export default function WorldExperience() {
             <article className="launch-feature">
               <span className="launch-feature-number">01 / EL UNIVERSO</span>
               <h3>Una cosmología original</h3>
-              <p>Siete raíces, regiones desconocidas, civilizaciones, sectas y misterios conectados por una misma Trama.</p>
+              <p>Siete Raíces, reinos olvidados, civilizaciones, órdenes, reliquias y misterios conectados por una misma Trama.</p>
               <span className="launch-state state-live">ARCHIVO NARRATIVO DISPONIBLE</span>
             </article>
             <article className="launch-feature">
@@ -254,7 +254,7 @@ export default function WorldExperience() {
             <article className="launch-feature">
               <span className="launch-feature-number">03 / LO QUE VIENE</span>
               <h3>Un mundo que crecerá</h3>
-              <p>El siguiente trabajo contempla mejorar el personaje, movimiento, animaciones, cámara y después ampliar los sistemas del RPG.</p>
+              <p>El siguiente trabajo contempla consolidar el personaje, la exploración, las animaciones y después ampliar los sistemas del RPG.</p>
               <span className="launch-state state-planned">PRÓXIMAS ETAPAS</span>
             </article>
           </div>
@@ -267,7 +267,7 @@ export default function WorldExperience() {
               <li className="roadmap-done"><span className="roadmap-marker">01</span><div><b>Fundamentos del universo</b><small>Identidad, cosmología y arquitectura separada entre juego y portal</small></div><em>BASE ESTABLECIDA</em></li>
               <li className="roadmap-progress"><span className="roadmap-marker">02</span><div><b>Prólogo explorable 3D</b><small>Escenario inicial, interacción y objetivo narrativo</small></div><em>PROTOTIPO</em></li>
               <li><span className="roadmap-marker">03</span><div><b>Personaje y cámara</b><small>Controlador, locomoción, animaciones y presentación</small></div><em>EN PLANIFICACIÓN</em></li>
-              <li><span className="roadmap-marker">04</span><div><b>Sistemas de RPG</b><small>Combate, cultivo, habilidades, NPC, misiones e inventario</small></div><em>ETAPAS FUTURAS</em></li>
+              <li><span className="roadmap-marker">04</span><div><b>Sistemas de RPG</b><small>progresión, habilidades, personajes, misiones e inventario</small></div><em>ETAPAS FUTURAS</em></li>
               <li><span className="roadmap-marker">05</span><div><b>Expansión del mundo</b><small>Regiones, exploración, contenido y pruebas de rendimiento</small></div><em>ETAPAS FUTURAS</em></li>
             </ol>
             <p className="roadmap-note">No existe una fecha de lanzamiento confirmada. La hoja de ruta puede cambiar según las pruebas y el progreso técnico.</p>
@@ -287,7 +287,7 @@ export default function WorldExperience() {
         <footer className="world-footer">
           <span className="chapter-tag">EL ARCHIVO APENAS COMIENZA</span>
           <h2>La Trama aún<br /><em>guarda secretos.</em></h2>
-          <p>Explora las crónicas. Descubre las facciones. Encuentra tu camino.</p>
+          <p>Explora las crónicas. Descubre las órdenes y civilizaciones. Encuentra tu camino.</p>
           <a href="https://github.com/JOSEFRO/cultivation-universe-game" target="_blank" rel="noreferrer">CONOCER EL PROYECTO DEL JUEGO ↗</a>
           <small>SIETE RAÍCES · UNIVERSO ORIGINAL · PROTOTIPO EN DESARROLLO</small>
         </footer>

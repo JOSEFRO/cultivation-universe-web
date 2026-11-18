@@ -9,8 +9,8 @@ Construir el portal oficial y comunitario de Cultivation Universe. Este producto
 | Capacidad | Web | Juego |
 |---|---:|---:|
 | Landing, marca, trailer, capturas y galería | Sí | No |
-| Lore, wiki, cosmología, regiones y mapa visual | Sí | Datos fuente del mundo cuando aplique |
-| Perfiles editoriales de personajes, sectas y bestiario | Sí | Implementación jugable y estado runtime |
+| Lore, wiki, cosmología original, regiones y mapa visual | Sí | Datos fuente del mundo cuando aplique |
+| Perfiles editoriales de personajes, órdenes y bestiario | Sí | Implementación jugable y estado runtime |
 | Devlogs, noticias y roadmap público | Sí | No |
 | CMS y publicación editorial | Sí | No |
 | Comunidad, comentarios, perfiles web y moderación | Sí | No |
@@ -31,7 +31,7 @@ No se debe crear en Three.js un controlador de personaje, combate, inventario fu
 1. Landing cinematográfica y presentación del juego.
 2. Universo / lore y enciclopedia.
 3. Mapa interactivo, regiones y puntos de interés.
-4. Personajes, cultivación (como contenido editorial), sectas, bestiario, técnicas y objetos.
+4. Personajes, progresión de las Raíces (como contenido editorial), órdenes, bestiario, técnicas y objetos.
 5. Galería multimedia y material promocional.
 6. Devlogs, noticias y roadmap.
 7. Hub de comunidad, perfiles, comentarios y moderación (fase posterior).
