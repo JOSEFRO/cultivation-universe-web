@@ -4,6 +4,11 @@
 
 Su propósito es presentar el videojuego y su universo, construir audiencia, publicar novedades del desarrollo y preparar la futura comunidad.
 
+
+## Arte y dirección visual
+
+El portal incorpora ilustraciones vectoriales originales para el Valle del Primer Alba, el Santuario de la Raíz, las Islas Celestes y el Mar Antiguo. Consulta [la guía de dirección visual](docs/VISUAL_ART_DIRECTION.md) y los recursos versionados en `public/art/`. Son ilustraciones conceptuales propias, no capturas del videojuego.
+
 ## Responsabilidades de este producto
 
 - Landing cinematográfica para presentar el proyecto y dirigir a las personas hacia el videojuego.
