@@ -170,7 +170,7 @@ export default function WorldExperience() {
       <div className="world-vignette" aria-hidden="true" />
       <header className="world-nav">
         <a className="world-brand" href="#inicio"><span>✧</span><b>SIETE RAÍCES</b></a>
-        <nav aria-label="Navegación del universo"><a href="#origen">El universo</a><a href="#raices">Las raíces</a><a href="#primordial">El misterio</a></nav>
+        <nav aria-label="Navegación del universo"><a href="#origen">El universo</a><a href="#raices">Las raíces</a><a href="#juego">El juego</a><a href="#primordial">El misterio</a></nav>
         <span className="dev-status"><i /> UNIVERSO EN DESARROLLO</span>
       </header>
       <main className="world-story">
@@ -198,6 +198,40 @@ export default function WorldExperience() {
             </div>
           </section>
         ))}
+        <section className="world-portal" id="juego">
+          <div className="portal-heading">
+            <span className="chapter-tag">EL ARCHIVO DE LA TRAMA · 09</span>
+            <h2>El universo no termina<br /><em>en sus historias.</em></h2>
+            <p>Las crónicas revelan el mundo. El proyecto del juego comienza a convertirlo en un lugar que podrás recorrer, descubrir y transformar.</p>
+          </div>
+          <div className="portal-grid">
+            <article className="portal-card portal-card-world">
+              <span className="portal-index">01 / ATLAS</span>
+              <div className="portal-symbol">✧</div>
+              <h3>Ocho capítulos.<br />Una sola Trama.</h3>
+              <p>Recorre el origen, los continentes mortales, las sectas, los mares antiguos y los dominios que aún no aparecen en los mapas.</p>
+              <a href="#origen">VOLVER A LAS CRÓNICAS ↗</a>
+            </article>
+            <article className="portal-card portal-card-roots">
+              <span className="portal-index">02 / COSMOLOGÍA</span>
+              <div className="portal-symbol">◈</div>
+              <h3>Siete raíces.<br />Siete principios.</h3>
+              <p>Origen, Vacío, Tiempo, Espacio, Vida, Muerte y Conciencia: fuerzas que dan forma a las leyes de este universo.</p>
+              <a href="#raices">DESCUBRIR LOS PRINCIPIOS ↗</a>
+            </article>
+            <article className="portal-card portal-card-game">
+              <span className="portal-index">03 / VIDEOJUEGO</span>
+              <div className="portal-symbol">⟡</div>
+              <h3>El primer camino<br />está despertando.</h3>
+              <p>El RPG avanza hacia su primer prólogo explorable en 3D. Consulta el código, la hoja de ruta y las pruebas de desarrollo.</p>
+              <a href="https://github.com/JOSEFRO/cultivation-universe-game" target="_blank" rel="noreferrer">ENTRAR AL PROYECTO DEL JUEGO ↗</a>
+            </article>
+          </div>
+          <div className="portal-status">
+            <div><span className="status-dot" /> <b>ESTADO DEL UNIVERSO</b></div>
+            <p>Archivo narrativo disponible · Prototipo 3D en desarrollo · Contenido y sistemas en expansión</p>
+          </div>
+        </section>
         <footer className="world-footer">
           <span className="chapter-tag">EL ARCHIVO APENAS COMIENZA</span>
           <h2>La Trama aún<br /><em>guarda secretos.</em></h2>
