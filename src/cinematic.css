@@ -1,0 +1,24 @@
+/* SIETE RAÍCES WEB · cinematic world treatment */
+:root{--root-gold:#e8c78c;--root-ice:#b9e7ec;--root-ink:#050811}
+html{scroll-behavior:smooth}
+body{background:#050811}
+.world-canvas{filter:saturate(1.08) contrast(1.06)}
+.world-vignette{background:linear-gradient(90deg,rgba(3,6,13,.82),rgba(3,6,13,.05) 78%),linear-gradient(0deg,rgba(3,6,13,.8),transparent 42%),radial-gradient(ellipse at 58% 42%,transparent 18%,rgba(2,4,10,.46) 100%)}
+.world-nav{height:88px;border-bottom-color:rgba(232,199,140,.18);background:linear-gradient(180deg,rgba(3,6,13,.9),rgba(3,6,13,.14));backdrop-filter:blur(16px)}
+.world-brand span{color:var(--root-gold);text-shadow:0 0 30px rgba(232,199,140,.5)}
+.world-nav nav a:hover{color:#fff0cf}
+.dev-status{border-color:rgba(232,199,140,.3);color:#d2c2a6}
+.dev-status i{background:#7ce4df;box-shadow:0 0 14px #7ce4df}
+.world-hero h1,.world-footer h2{text-shadow:0 12px 65px rgba(0,0,0,.65)}
+.world-hero h1 em,.world-footer h2 em{color:#f0d29b;text-shadow:0 0 48px rgba(220,173,100,.3)}
+.enter-world,.world-footer>a{border-color:rgba(232,199,140,.78);background:linear-gradient(110deg,rgba(232,199,140,.1),rgba(232,199,140,.02));box-shadow:0 10px 38px rgba(0,0,0,.22);transition:transform .28s,background .28s,box-shadow .28s}
+.enter-world:hover,.world-footer>a:hover{transform:translateY(-3px);background:rgba(232,199,140,.16);box-shadow:0 16px 45px rgba(0,0,0,.35),0 0 30px rgba(232,199,140,.1)}
+.chapter-art{border-color:rgba(232,199,140,.32);box-shadow:0 35px 110px rgba(0,0,0,.58),0 0 48px rgba(232,199,140,.06)}
+.chapter-art-image{filter:saturate(.92) contrast(1.1)}
+.chapter-copy{border-color:rgba(232,199,140,.42);background:linear-gradient(90deg,rgba(4,7,14,.86),rgba(4,7,14,.22));box-shadow:0 20px 70px rgba(0,0,0,.2)}
+.chapter-copy h2{color:#fff5e5;text-shadow:0 8px 40px #0009}
+.chapter-copy h3,.chapter-tag,.hero-kicker{color:#e8c78c}
+.root-chips span{border-color:rgba(232,199,140,.42);color:#f0d7a9;background:rgba(7,10,17,.28)}
+.scroll-cue span{background:linear-gradient(#e8c78c,transparent)}
+@media(max-width:700px){.world-nav{height:74px}.chapter-copy,.align-right .chapter-copy{background:rgba(4,7,14,.82);backdrop-filter:blur(10px)}}
+@media(prefers-reduced-motion:reduce){.enter-world,.world-footer>a{transition:none}}
