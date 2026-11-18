@@ -29,17 +29,16 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: 22
-          cache: npm
 
       - name: Install dependencies
-        run: npm ci --no-audit --no-fund
+        run: npm install --no-audit --no-fund
 
       - name: Build website
         run: npm run build
 
-      # GitHub Pages must be enabled once in Settings > Pages
-      # with "GitHub Actions" as the build and deployment source.
-      # configure-pages then reads the existing Pages configuration.
+      # Enable Pages once in Settings > Pages and select GitHub Actions.
+      # This workflow reads the existing Pages configuration; it does not
+      # attempt the privileged repository-level enablement API.
       - name: Configure GitHub Pages
         uses: actions/configure-pages@v5
 
