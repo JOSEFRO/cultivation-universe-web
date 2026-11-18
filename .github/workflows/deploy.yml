@@ -1,26 +1,23 @@
 name: Deploy Siete Raíces Web to GitHub Pages
 
 on:
+  pull_request:
+    branches: [main]
   push:
     branches: [main]
   workflow_dispatch:
 
-permissions:
-  contents: read
-  pages: write
-  id-token: write
-
 concurrency:
-  group: siete-raices-pages
+  group: siete-raices-pages-${{ github.ref }}
   cancel-in-progress: true
 
 jobs:
-  build-and-deploy:
+  build:
+    name: Build and package website
     runs-on: ubuntu-latest
     timeout-minutes: 15
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
+    permissions:
+      contents: read
     steps:
       - name: Checkout
         uses: actions/checkout@v4
@@ -36,16 +33,29 @@ jobs:
       - name: Build website
         run: npm run build
 
+      - name: Upload Pages artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: ./dist
+
+  deploy:
+    name: Deploy website
+    if: github.event_name != 'pull_request'
+    needs: build
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    permissions:
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
       # Enable Pages once in Settings > Pages and select GitHub Actions.
       # This workflow reads the existing Pages configuration; it does not
       # attempt the privileged repository-level enablement API.
       - name: Configure GitHub Pages
         uses: actions/configure-pages@v5
-
-      - name: Upload build artifact
-        uses: actions/upload-pages-artifact@v3
-        with:
-          path: ./dist
 
       - name: Deploy to GitHub Pages
         id: deployment
