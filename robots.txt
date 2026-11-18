@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://josefro.github.io/cultivation-universe-web/sitemap.xml
