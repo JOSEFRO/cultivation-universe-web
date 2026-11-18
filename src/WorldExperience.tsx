@@ -232,6 +232,58 @@ export default function WorldExperience() {
             <p>Archivo narrativo disponible · Prototipo 3D en desarrollo · Contenido y sistemas en expansión</p>
           </div>
         </section>
+        <section className="launch-section" id="desarrollo">
+          <div className="launch-heading">
+            <span className="chapter-tag">CUADERNO DE DESARROLLO · 2026</span>
+            <h2>Un universo en construcción.<br /><em>Una aventura por despertar.</em></h2>
+            <p>Cultivation Universe es un RPG de fantasía y cultivo en desarrollo. Esta web es su portal oficial: aquí compartiremos el mundo, las decisiones creativas y cada avance importante del proyecto.</p>
+          </div>
+          <div className="launch-feature-grid">
+            <article className="launch-feature">
+              <span className="launch-feature-number">01 / EL UNIVERSO</span>
+              <h3>Una cosmología original</h3>
+              <p>Siete raíces, regiones desconocidas, civilizaciones, sectas y misterios conectados por una misma Trama.</p>
+              <span className="launch-state state-live">ARCHIVO NARRATIVO DISPONIBLE</span>
+            </article>
+            <article className="launch-feature">
+              <span className="launch-feature-number">02 / EL VIDEOJUEGO</span>
+              <h3>El primer prólogo 3D</h3>
+              <p>El equipo está construyendo la base explorable: escenario, personaje provisional, cámara, interacción y guardián.</p>
+              <span className="launch-state state-progress">PROTOTIPO EN DESARROLLO</span>
+            </article>
+            <article className="launch-feature">
+              <span className="launch-feature-number">03 / LO QUE VIENE</span>
+              <h3>Un mundo que crecerá</h3>
+              <p>El siguiente trabajo contempla mejorar el personaje, movimiento, animaciones, cámara y después ampliar los sistemas del RPG.</p>
+              <span className="launch-state state-planned">PRÓXIMAS ETAPAS</span>
+            </article>
+          </div>
+          <div className="launch-roadmap">
+            <div className="roadmap-title">
+              <span className="chapter-tag">HOJA DE RUTA PÚBLICA</span>
+              <p>El desarrollo avanza por etapas. Las funciones se anunciarán como disponibles cuando estén implementadas y verificadas.</p>
+            </div>
+            <ol className="roadmap-list">
+              <li className="roadmap-done"><span className="roadmap-marker">01</span><div><b>Fundamentos del universo</b><small>Identidad, cosmología y arquitectura separada entre juego y portal</small></div><em>BASE ESTABLECIDA</em></li>
+              <li className="roadmap-progress"><span className="roadmap-marker">02</span><div><b>Prólogo explorable 3D</b><small>Escenario inicial, interacción y objetivo narrativo</small></div><em>PROTOTIPO</em></li>
+              <li><span className="roadmap-marker">03</span><div><b>Personaje y cámara</b><small>Controlador, locomoción, animaciones y presentación</small></div><em>EN PLANIFICACIÓN</em></li>
+              <li><span className="roadmap-marker">04</span><div><b>Sistemas de RPG</b><small>Combate, cultivo, habilidades, NPC, misiones e inventario</small></div><em>ETAPAS FUTURAS</em></li>
+              <li><span className="roadmap-marker">05</span><div><b>Expansión del mundo</b><small>Regiones, exploración, contenido y pruebas de rendimiento</small></div><em>ETAPAS FUTURAS</em></li>
+            </ol>
+            <p className="roadmap-note">No existe una fecha de lanzamiento confirmada. La hoja de ruta puede cambiar según las pruebas y el progreso técnico.</p>
+          </div>
+          <div className="launch-follow">
+            <div>
+              <span className="chapter-tag">SÉ PARTE DEL COMIENZO</span>
+              <h3>La próxima página<br /><em>la escribimos construyendo.</em></h3>
+              <p>Consulta el código fuente y acompaña los avances desde los repositorios oficiales.</p>
+            </div>
+            <div className="launch-links">
+              <a href="https://github.com/JOSEFRO/cultivation-universe-game" target="_blank" rel="noreferrer">SEGUIR EL VIDEOJUEGO <span>↗</span></a>
+              <a href="https://github.com/JOSEFRO/cultivation-universe-web" target="_blank" rel="noreferrer">SEGUIR EL PORTAL WEB <span>↗</span></a>
+            </div>
+          </div>
+        </section>
         <footer className="world-footer">
           <span className="chapter-tag">EL ARCHIVO APENAS COMIENZA</span>
           <h2>La Trama aún<br /><em>guarda secretos.</em></h2>
