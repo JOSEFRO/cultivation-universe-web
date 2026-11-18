@@ -36,7 +36,9 @@ Three.js está permitido exclusivamente como tecnología de presentación:
 
 ## Estado actual
 
-La web es un prototipo del portal oficial. Tiene una experiencia visual inicial, navegación narrativa y una sección que enlaza al repositorio del juego. El mapa completo, la enciclopedia ampliada, galería, devlogs, roadmap editorial y comunidad están pendientes de desarrollo.
+La web funciona como presentación pública inicial del proyecto. Incluye una experiencia narrativa cinematográfica, cosmología de las Siete Raíces, información transparente sobre el estado del videojuego, hoja de ruta de desarrollo y enlaces a los repositorios oficiales. La enciclopedia ampliada, mapa interactivo, galería editorial, devlogs periódicos y comunidad se desarrollarán por etapas.
+
+**Importante:** el videojuego todavía está en desarrollo. No hay fecha de lanzamiento confirmada ni una versión pública descargable anunciada.
 
 ## Tecnología actual
 
