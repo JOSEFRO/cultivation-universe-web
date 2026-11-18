@@ -1,28 +1,28 @@
 export const roots = [
-  { name: 'Origen', mark: '✧', description: 'La fuerza que da comienzo a toda existencia.' },
-  { name: 'Vacío', mark: '◌', description: 'El espacio entre lo que existe y lo que aún no tiene nombre.' },
-  { name: 'Tiempo', mark: '⌛', description: 'La corriente que ordena los ciclos y sus rupturas.' },
-  { name: 'Espacio', mark: '◇', description: 'La estructura que separa, conecta y contiene los mundos.' },
-  { name: 'Vida', mark: '❋', description: 'El impulso que transforma la materia en crecimiento.' },
-  { name: 'Muerte', mark: '☾', description: 'El umbral que cierra ciclos y devuelve lo perdido.' },
-  { name: 'Conciencia', mark: '◎', description: 'La mirada capaz de comprender y alterar la Trama.' },
+  { name: 'Origen', mark: '✧', description: 'La primera ley: aquello que inicia, crea posibilidades y da forma a lo que aún no existe.' },
+  { name: 'Vacío', mark: '◌', description: 'La vastedad que separa las cosas y guarda el espacio para lo que todavía no ha nacido.' },
+  { name: 'Tiempo', mark: '⌛', description: 'La corriente que enlaza pasado, presente y futuro, y permite que toda historia avance.' },
+  { name: 'Espacio', mark: '◇', description: 'La arquitectura invisible que conecta lugares, distancias y mundos.' },
+  { name: 'Vida', mark: '❋', description: 'La fuerza que impulsa el crecimiento, la transformación y la voluntad de persistir.' },
+  { name: 'Muerte', mark: '☾', description: 'El límite que cierra cada ciclo y devuelve a la Trama aquello que ha cumplido su tiempo.' },
+  { name: 'Conciencia', mark: '◎', description: 'La capacidad de percibir las otras seis leyes y comprender las consecuencias de cambiarlas.' },
 ] as const
 
 export const realms = [
-  { number: '01', name: 'Despertar de la Raíz', note: 'Percibir la primera resonancia del mundo.' },
-  { number: '02', name: 'Templado del Cuerpo', note: 'Convertir el cuerpo en un recipiente capaz de soportar la energía.' },
-  { number: '03', name: 'Forja del Núcleo', note: 'Condensar una identidad propia de cultivo.' },
-  { number: '04', name: 'Dominio del Alma', note: 'Expandir la voluntad más allá de los sentidos.' },
-  { number: '05', name: 'Comprensión de la Ley', note: 'Reconocer las reglas que sostienen la realidad.' },
-  { number: '06', name: 'Trascendencia', note: 'Superar los límites del propio mundo.' },
+  { number: '01', name: 'La Chispa', note: 'Percibir por primera vez la presencia de una Raíz.' },
+  { number: '02', name: 'El Vínculo', note: 'Establecer una conexión estable entre la voluntad y una ley primordial.' },
+  { number: '03', name: 'La Forja Interior', note: 'Convertir esa conexión en una fuente propia de poder y resistencia.' },
+  { number: '04', name: 'El Dominio', note: 'Aplicar la ley elegida con precisión y comprender sus límites.' },
+  { number: '05', name: 'La Convergencia', note: 'Reconocer cómo interactúan varias leyes sin quebrar su equilibrio.' },
+  { number: '06', name: 'La Trascendencia', note: 'Superar los límites conocidos sin dejar de responder por las consecuencias.' },
 ] as const
 
 export const factions = [
-  { name: 'Imperio de los Mil Sellos', kind: 'Imperio', detail: 'Una potencia que gobierna mediante pactos, juramentos y antiguas leyes.' },
-  { name: 'Secta del Horizonte', kind: 'Secta', detail: 'Sus discípulos estudian los límites entre los mundos.' },
-  { name: 'Palacio de la Memoria', kind: 'Palacio', detail: 'Custodia recuerdos que sobrevivieron a eras desaparecidas.' },
-  { name: 'Orden del Último Umbral', kind: 'Orden', detail: 'Vigila los pasos donde la vida y la muerte se confunden.' },
-  { name: 'Herederos del Vacío', kind: 'Linaje', detail: 'Un linaje reservado cuyos orígenes nadie puede confirmar.' },
+  { name: 'Corona de Aster', kind: 'Reino', detail: 'Una monarquía antigua que sostiene su autoridad mediante pactos entre ciudades, casas nobles y fronteras disputadas.' },
+  { name: 'Orden del Horizonte', kind: 'Orden', detail: 'Cartógrafos, estudiosos y exploradores que investigan los límites entre los territorios conocidos.' },
+  { name: 'Archivo de la Memoria', kind: 'Institución', detail: 'Una comunidad de cronistas que conserva testimonios, mapas y recuerdos de eras desaparecidas.' },
+  { name: 'Custodios del Último Umbral', kind: 'Orden', detail: 'Guardianes de los lugares donde la vida, la muerte y la memoria se encuentran.' },
+  { name: 'Linaje del Vacío', kind: 'Linaje', detail: 'Una familia dispersa cuya historia está ligada a regiones que no aparecen en ningún mapa fiable.' },
 ] as const
 
-export const worldPrinciple = 'Ningún cultivador tiene garantizada la grandeza por su nacimiento, talento o maestro.'
+export const worldPrinciple = 'Ningún destino está garantizado por nacimiento, riqueza o linaje. El poder exige comprensión, elección y responsabilidad.'
