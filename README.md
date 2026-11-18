@@ -7,7 +7,7 @@ Su propósito es presentar el videojuego y su universo, construir audiencia, pub
 ## Responsabilidades de este producto
 
 - Landing cinematográfica para presentar el proyecto y dirigir a las personas hacia el videojuego.
-- Lore y enciclopedia: cosmología, siete raíces, reinos, regiones, personajes, sectas, bestiario, técnicas y objetos.
+- Lore y enciclopedia: cosmología, siete raíces, reinos, regiones, personajes, órdenes, bestiario, técnicas y objetos.
 - Mapa interactivo del mundo, con regiones y puntos de interés explorables desde la web.
 - Galería de arte, capturas, vídeos, música original y material promocional con derechos documentados.
 - Devlogs, noticias, roadmap público y registro de cambios.
@@ -17,7 +17,7 @@ Su propósito es presentar el videojuego y su universo, construir audiencia, pub
 
 ## Experiencia visual
 
-La web debe sentirse como un portal premium e inmersivo: dirección de arte coherente con el videojuego, tipografía editorial, transiciones cuidadas, composición cinematográfica, responsive y accesible.
+La web debe sentirse como un portal premium e inmersivo: dirección de arte de fantasía épica occidental, original y coherente con el videojuego, tipografía editorial, transiciones cuidadas, composición cinematográfica, responsive y accesible.
 
 Three.js está permitido exclusivamente como tecnología de presentación:
 - Fondos y paisajes 3D decorativos.
@@ -36,7 +36,7 @@ Three.js está permitido exclusivamente como tecnología de presentación:
 
 ## Estado actual
 
-La web funciona como presentación pública inicial del proyecto. Incluye una experiencia narrativa cinematográfica, cosmología de las Siete Raíces, información transparente sobre el estado del videojuego, hoja de ruta de desarrollo y enlaces a los repositorios oficiales. La enciclopedia ampliada, mapa interactivo, galería editorial, devlogs periódicos y comunidad se desarrollarán por etapas.
+La web funciona como presentación pública inicial del proyecto. Incluye una experiencia narrativa cinematográfica, cosmología de las Siete Raíces y una guía de identidad narrativa occidental, información transparente sobre el estado del videojuego, hoja de ruta de desarrollo y enlaces a los repositorios oficiales. La enciclopedia ampliada, mapa interactivo, galería editorial, devlogs periódicos y comunidad se desarrollarán por etapas.
 
 **Importante:** el videojuego todavía está en desarrollo. No hay fecha de lanzamiento confirmada ni una versión pública descargable anunciada.
 
