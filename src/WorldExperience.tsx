@@ -170,7 +170,7 @@ export default function WorldExperience() {
       <div className="world-vignette" aria-hidden="true" />
       <header className="world-nav">
         <a className="world-brand" href="#inicio"><span>✧</span><b>SIETE RAÍCES</b></a>
-        <nav aria-label="Navegación del universo"><a href="#origen">El universo</a><a href="#raices">Las raíces</a><a href="#juego">El juego</a><a href="#primordial">El misterio</a></nav>
+        <nav aria-label="Navegación del universo"><a href="#origen">El universo</a><a href="#raices">Las raíces</a><a href="#juego">El juego</a><a href="#desarrollo">Desarrollo</a></nav>
         <span className="dev-status"><i /> UNIVERSO EN DESARROLLO</span>
       </header>
       <main className="world-story">
