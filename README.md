@@ -67,3 +67,38 @@ npm run build
 ## Principio de producto
 
 **El portal inspira, informa y reúne a la comunidad. El videojuego permite jugar.** Mantener estas responsabilidades separadas es un requisito de arquitectura.
+
+
+## Vista previa del proyecto
+
+### Mundo y atmósfera
+
+<p align="center">
+  <img src="https://d8j0ntlcm91z4.cloudfront.net/user_3MJ8xX039ib9919oo3CFVd7NjMx/hf_20261119_134249_59abc2dd-1837-48f6-bd1d-119d8f60b0df.png" alt="Panorama cinematográfico del mundo de Siete Raíces" width="100%">
+</p>
+
+<p align="center">
+  <img src="https://d8j0ntlcm91z4.cloudfront.net/user_3MJ8xX039ib9919oo3CFVd7NjMx/hf_20261119_135839_bb2de992-a88f-4fce-b217-f0191767ecc7.gif" alt="Fondo animado con energía espiritual y partículas" width="100%">
+</p>
+
+### Lugares y arte conceptual
+
+<p align="center">
+  <img src="https://d8j0ntlcm91z4.cloudfront.net/user_3MJ8xX039ib9919oo3CFVd7NjMx/hf_20261119_134248_65b171d0-1be6-4b2e-833f-a533db8da71a.png" alt="Santuario antiguo en un valle de cultivo" width="80%">
+</p>
+
+### Personajes y bestiario
+
+<p align="center">
+  <img src="https://d8j0ntlcm91z4.cloudfront.net/user_3MJ8xX039ib9919oo3CFVd7NjMx/hf_20261119_134248_61a28044-93c1-4e96-8246-2aaeb7467b94.png" alt="Diseño conceptual del cultivador protagonista" width="42%">
+  <img src="https://d8j0ntlcm91z4.cloudfront.net/user_3MJ8xX039ib9919oo3CFVd7NjMx/hf_20261119_134247_68136778-923c-41c4-a409-3f6a979ddc3c.png" alt="Diseño conceptual de la criatura espiritual" width="42%">
+</p>
+
+### Pruebas de efectos visuales
+
+<p align="center">
+  <img src="https://d8j0ntlcm91z4.cloudfront.net/user_3MJ8xX039ib9919oo3CFVd7NjMx/hf_20261119_140607_d3357ddf-5e5d-485f-8558-0815f4242ecf.gif" alt="Prueba animada de aura espiritual del protagonista" width="42%">
+  <img src="https://d8j0ntlcm91z4.cloudfront.net/user_3MJ8xX039ib9919oo3CFVd7NjMx/hf_20261119_140559_bb487f77-8263-40cb-8be0-6efcaf89be75.gif" alt="Prueba animada de aura de la criatura espiritual" width="42%">
+</p>
+
+> Las imágenes y animaciones anteriores son arte conceptual y pruebas visuales generadas para explorar la dirección artística. No deben confundirse con capturas de gameplay ni con modelos 3D finales.
