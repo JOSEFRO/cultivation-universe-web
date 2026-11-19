@@ -1,73 +1,112 @@
-# Cultivation Universe — Portal oficial y comunitario
+<div align="center">
 
-<p align="center"><img src="https://d8j0ntlcm91z4.cloudfront.net/user_3MJ8xX039ib9919oo3CFVd7NjMx/hf_20261119_141634_45e1cde3-6bfe-4b45-917a-1a20b403bf1b.webp" alt="Arte conceptual del mundo de Cultivation Universe: islas celestes, montañas jade y templo" width="100%"></p>
+<img src="https://d8j0ntlcm91z4.cloudfront.net/user_3MJ8xX039ib9919oo3CFVd7NjMx/hf_20261119_141634_45e1cde3-6bfe-4b45-917a-1a20b403bf1b.webp" alt="Arte conceptual del portal Siete Raíces" width="100%">
 
-> **Arte conceptual de presentación generado para este repositorio.** No es una captura de la web publicada ni una escena del videojuego.
+# SIETE RAÍCES — Portal oficial
 
-**Este repositorio contiene el sitio web oficial de Cultivation Universe. No es el videojuego y no contiene gameplay.**
+**Un portal cinematográfico para presentar el universo, documentar el desarrollo y reunir a la comunidad.**
 
-Su propósito es presentar el videojuego y su universo, construir audiencia, publicar novedades del desarrollo y preparar la futura comunidad.
+[Repositorio](https://github.com/JOSEFRO/cultivation-universe-web) · [Videojuego](https://github.com/JOSEFRO/cultivation-universe-game) · [Desarrollo y tareas](https://github.com/JOSEFRO/cultivation-universe-web/issues)
 
+![Estado](https://img.shields.io/badge/estado-desarrollo-blue)
+![React](https://img.shields.io/badge/React-19-149ECA?logo=react)
+![TypeScript](https://img.shields.io/badge/TypeScript-5.8-3178C6?logo=typescript)
+![Vite](https://img.shields.io/badge/Vite-7-646CFF?logo=vite)
+![Three.js](https://img.shields.io/badge/3D-Three.js-black?logo=threedotjs)
 
-## Arte y dirección visual
+</div>
 
-El portal incorpora ilustraciones vectoriales originales para el Valle del Primer Alba, el Santuario de la Raíz, las Islas Celestes y el Mar Antiguo. Consulta [la guía de dirección visual](docs/VISUAL_ART_DIRECTION.md) y los recursos versionados en `public/art/`. Son ilustraciones conceptuales propias, no capturas del videojuego.
+## 1. Propósito del producto
 
-## Responsabilidades de este producto
+Este repositorio contiene el sitio web oficial de Siete Raíces. Su función es presentar el proyecto, comunicar su identidad, documentar el universo narrativo y publicar novedades del desarrollo.
 
-- Landing cinematográfica para presentar el proyecto y dirigir a las personas hacia el videojuego.
-- Lore y enciclopedia: cosmología, siete raíces, reinos, regiones, personajes, órdenes, bestiario, técnicas y objetos.
-- Mapa interactivo del mundo, con regiones y puntos de interés explorables desde la web.
-- Galería de arte, capturas, vídeos, música original y material promocional con derechos documentados.
-- Devlogs, noticias, roadmap público y registro de cambios.
-- Enlaces a GitHub, canales sociales y futuras plataformas comunitarias.
-- Preparación de futuras descargas, demos y enlaces a versiones publicadas, cuando existan.
-- Futuras funciones comunitarias: perfiles, comentarios, suscripciones, contribuciones y moderación, sujetas a diseño y backend.
+**Este repositorio no es el videojuego y no contiene el gameplay del RPG.** El producto jugable se desarrolla por separado en [cultivation-universe-game](https://github.com/JOSEFRO/cultivation-universe-game).
 
-## Experiencia visual
+## 2. Alcance funcional del portal
 
-La web debe sentirse como un portal premium e inmersivo: dirección de arte de fantasía épica occidental, original y coherente con el videojuego, tipografía editorial, transiciones cuidadas, composición cinematográfica, responsive y accesible.
+- Landing page cinematográfica.
+- Presentación del mundo y su cosmología.
+- Enciclopedia de regiones, personajes, órdenes, criaturas, técnicas y objetos.
+- Mapas y visualizaciones interactivas de carácter informativo.
+- Galería de arte y material promocional con derechos documentados.
+- Devlogs, noticias y hoja de ruta.
+- Enlaces a repositorios, comunidad y futuras versiones descargables.
+- Posibles funciones comunitarias futuras, sujetas a diseño y backend.
 
-Three.js está permitido exclusivamente como tecnología de presentación:
-- Fondos y paisajes 3D decorativos.
-- Mapas y globos visuales interactivos.
-- Reliquias, símbolos, partículas, portales y escenas ambientales.
-- Navegación inmersiva y visualización de regiones.
-- Efectos de cámara y profundidad que no controlen un personaje ni simulen sistemas de juego.
+## 3. Dirección artística
 
-**Prohibido en este repositorio:** movimiento de personajes como gameplay, combate, IA, NPC con lógica jugable, inventario funcional del RPG, misiones ejecutables, estadísticas/progresión de personajes, físicas de juego o simulación de mecánicas. Todo eso pertenece a `cultivation-universe-game`.
+La identidad visual debe ser original y coherente con el videojuego: fantasía épica, composición cinematográfica, tipografía editorial, escenarios atmosféricos y una experiencia responsive.
 
-## Relación con el videojuego
+Three.js se reserva para presentación y exploración visual: fondos 3D, mapas, reliquias, partículas, portales y efectos de profundidad.
 
-- Producto jugable: [cultivation-universe-game](https://github.com/JOSEFRO/cultivation-universe-game).
-- Este portal presenta el proyecto, documenta su mundo y enlaza las builds oficiales cuando estén disponibles.
-- La web no sustituye al juego, no es una versión web del RPG y no debe prometer funciones que todavía no existan en el videojuego.
+No se implementarán aquí sistemas de gameplay como combate, IA de NPC, inventario funcional, progresión, físicas, misiones ejecutables ni control de personajes. Esas responsabilidades pertenecen al videojuego.
 
-## Estado actual
+## 4. Arquitectura y tecnologías
 
-La web funciona como presentación pública inicial del proyecto. Incluye una experiencia narrativa cinematográfica, cosmología de las Siete Raíces y una guía de identidad narrativa occidental, información transparente sobre el estado del videojuego, hoja de ruta de desarrollo y enlaces a los repositorios oficiales. La enciclopedia ampliada, mapa interactivo, galería editorial, devlogs periódicos y comunidad se desarrollarán por etapas.
+- React 19 y TypeScript.
+- Vite 7.
+- Three.js para visualización 3D.
+- GSAP para animaciones.
+- Lenis para desplazamiento suavizado.
+- CSS responsive.
+- GitHub Pages como plataforma de publicación prevista.
 
-**Importante:** el videojuego todavía está en desarrollo. No hay fecha de lanzamiento confirmada ni una versión pública descargable anunciada.
+## 5. Requisitos y desarrollo local
 
-## Tecnología actual
-
-- React 19
-- TypeScript
-- Vite 7
-- Three.js
-- GSAP
-- Lenis
-- CSS responsive
-- GitHub Pages para publicación
-
-## Desarrollo local
+Requisitos: Node.js 20.19 o superior y npm.
 
 ```bash
+git clone https://github.com/JOSEFRO/cultivation-universe-web.git
+cd cultivation-universe-web
 npm install
 npm run dev
-npm run build
 ```
 
-## Principio de producto
+Para validar la compilación:
 
-**El portal inspira, informa y reúne a la comunidad. El videojuego permite jugar.** Mantener estas responsabilidades separadas es un requisito de arquitectura.
+```bash
+npm run build
+npm run preview
+```
+
+## 6. Calidad, rendimiento y accesibilidad
+
+- Adaptación a móviles, tabletas y escritorio.
+- Imágenes optimizadas y formatos modernos cuando proceda.
+- Carga diferida de recursos pesados.
+- Respeto por `prefers-reduced-motion`.
+- Navegación por teclado y foco visible.
+- Contraste y jerarquía semántica.
+- Fallback 2D si WebGL no está disponible.
+- Control de peso de modelos, texturas y efectos.
+- Prevención de errores de hidratación/ejecución y limpieza de animaciones.
+
+## 7. Seguridad
+
+- No incluir secretos ni credenciales en el cliente.
+- Usar HTTPS en enlaces y recursos externos.
+- Validar contenido externo antes de mostrarlo.
+- Restringir dominios y atributos de embeds.
+- Documentar licencias y procedencia de recursos visuales y sonoros.
+- Evitar dependencias y scripts externos innecesarios.
+
+## 8. Estado y publicación
+
+El portal está en desarrollo. La URL pública debe considerarse confirmada únicamente cuando GitHub Pages esté configurado y el despliegue de la rama principal finalice correctamente.
+
+- Código y cambios: [GitHub](https://github.com/JOSEFRO/cultivation-universe-web).
+- Ejecuciones de CI/CD: [GitHub Actions](https://github.com/JOSEFRO/cultivation-universe-web/actions).
+- Configuración de despliegue: [.github/workflows/deploy.yml](.github/workflows/deploy.yml).
+
+## 9. Separación de productos
+
+| Portal web | Videojuego |
+|---|---|
+| Presenta el proyecto y su mundo. | Contiene la experiencia jugable. |
+| Publica lore, arte y devlogs. | Implementa movimiento, interacción y misiones. |
+| Usa 3D para visualización y navegación. | Usa el motor para gameplay y simulación. |
+| No contiene sistemas jugables. | Es el producto que se juega. |
+
+## 10. Licencia
+
+No se ha incorporado una licencia de reutilización. El código y los recursos permanecen reservados a su titular salvo autorización expresa.
