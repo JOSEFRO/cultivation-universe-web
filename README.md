@@ -1,5 +1,9 @@
 # Cultivation Universe — Portal oficial y comunitario
 
+<p align="center"><img src="https://d8j0ntlcm91z4.cloudfront.net/user_3MJ8xX039ib9919oo3CFVd7NjMx/hf_20261119_141634_45e1cde3-6bfe-4b45-917a-1a20b403bf1b.webp" alt="Arte conceptual del mundo de Cultivation Universe: islas celestes, montañas jade y templo" width="100%"></p>
+
+> **Arte conceptual de presentación generado para este repositorio.** No es una captura de la web publicada ni una escena del videojuego.
+
 **Este repositorio contiene el sitio web oficial de Cultivation Universe. No es el videojuego y no contiene gameplay.**
 
 Su propósito es presentar el videojuego y su universo, construir audiencia, publicar novedades del desarrollo y preparar la futura comunidad.
