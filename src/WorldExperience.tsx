@@ -179,14 +179,15 @@ export default function WorldExperience() {
 
   return (
     <>
+      <a className="skip-link" href="#contenido">Saltar al contenido</a>
       <canvas ref={canvasRef} className="world-canvas" aria-hidden="true" />
       <div className="world-vignette" aria-hidden="true" />
       <header className="world-nav">
         <a className="world-brand" href="#inicio"><span>✧</span><b>SIETE RAÍCES</b></a>
         <nav aria-label="Navegación del universo"><a href="#origen">El universo</a><a href="#raices">Las raíces</a><a href="#juego">El juego</a><a href="#desarrollo">Desarrollo</a></nav>
-        <span className="dev-status"><i /> UNIVERSO EN DESARROLLO</span>
+        <span className="dev-status" role="status" aria-label="Estado del proyecto: universo en desarrollo"><i aria-hidden="true" /> UNIVERSO EN DESARROLLO</span>
       </header>
-      <main className="world-story">
+      <main className="world-story" id="contenido">
         <section className="world-hero" id="inicio">
           <div className="hero-kicker">UNA EXPERIENCIA A TRAVÉS DE LA TRAMA PRIMORDIAL</div>
           <h1>El destino no se<br /><em>hereda.</em> Se conquista.</h1>
