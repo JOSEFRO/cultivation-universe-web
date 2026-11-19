@@ -7,8 +7,8 @@ import Lenis from 'lenis'
 gsap.registerPlugin(ScrollTrigger)
 
 const chapters = [
-  { id: 'origen', image: '/cultivation-universe-web/art/valle-primer-alba.svg', number: '01', title: 'El Origen', subtitle: 'Antes de que existieran los mundos', text: 'Siete principios despertaron en la Trama Primordial. De su resonancia nació todo lo que alguna vez tuvo nombre.', tag: 'PRÓLOGO · LA TRAMA PRIMORDIAL' },
-  { id: 'mortales', image: '/cultivation-universe-web/art/valle-primer-alba.svg', number: '02', title: 'Los Reinos Mortales', subtitle: 'Donde comienzan los caminos', text: 'Fortalezas, puertos, ciudades libres y cordilleras separadas por mares inmensos. Quien despierta una Raíz descubre que el mundo es mucho mayor que su tierra natal.', tag: 'LOS PRIMEROS REINOS' },
+  { id: 'origen', image: 'https://d8j0ntlcm91z4.cloudfront.net/user_3MJ8xX039ib9919oo3CFVd7NjMx/hf_20261119_134248_65b171d0-1be6-4b2e-833f-a533db8da71a.png', number: '01', title: 'El Origen', subtitle: 'Antes de que existieran los mundos', text: 'Siete principios despertaron en la Trama Primordial. De su resonancia nació todo lo que alguna vez tuvo nombre.', tag: 'PRÓLOGO · LA TRAMA PRIMORDIAL' },
+  { id: 'mortales', image: 'https://d8j0ntlcm91z4.cloudfront.net/user_3MJ8xX039ib9919oo3CFVd7NjMx/hf_20261119_134248_65b171d0-1be6-4b2e-833f-a533db8da71a.png', number: '02', title: 'Los Reinos Mortales', subtitle: 'Donde comienzan los caminos', text: 'Fortalezas, puertos, ciudades libres y cordilleras separadas por mares inmensos. Quien despierta una Raíz descubre que el mundo es mucho mayor que su tierra natal.', tag: 'LOS PRIMEROS REINOS' },
   { id: 'sectas', image: '/cultivation-universe-web/art/santuario-raiz.svg', number: '03', title: 'Reinos y Órdenes', subtitle: 'El conocimiento también tiene fronteras', text: 'Casas soberanas, órdenes juramentadas y gremios de exploradores protegen sus archivos, reliquias y territorios. Ninguna facción conoce toda la verdad.', tag: 'PODER · JURAMENTOS · ALIANZAS' },
   { id: 'antiguos', image: '/cultivation-universe-web/art/mar-antiguo.svg', number: '04', title: 'Mar de los Antiguos', subtitle: 'Las eras no desaparecen por completo', text: 'Bajo las mareas descansan fortalezas sumergidas, navíos petrificados y vestigios de civilizaciones anteriores a los primeros registros.', tag: 'HERENCIAS OLVIDADAS' },
   { id: 'cielos', image: '/cultivation-universe-web/art/islas-celestes.svg', number: '05', title: 'Cielos Fragmentados', subtitle: 'Mundos que ya no comparten horizonte', text: 'Fragmentos de realidad flotan separados. Cruzarlos exige algo más que fuerza: comprensión del espacio y sus leyes.', tag: 'LOS LÍMITES DEL MUNDO' },
@@ -168,6 +168,7 @@ export default function WorldExperience() {
     <>
       <canvas ref={canvasRef} className="world-canvas" aria-hidden="true" />
       <div className="world-vignette" aria-hidden="true" />
+      <div className="spirit-particles" aria-hidden="true">{Array.from({ length: 34 }, (_, i) => <i key={i} style={{ '--particle-index': i } as React.CSSProperties} />)}</div>
       <header className="world-nav">
         <a className="world-brand" href="#inicio"><span>✧</span><b>SIETE RAÍCES</b></a>
         <nav aria-label="Navegación del universo"><a href="#origen">El universo</a><a href="#raices">Las raíces</a><a href="#juego">El juego</a><a href="#desarrollo">Desarrollo</a></nav>
@@ -198,6 +199,13 @@ export default function WorldExperience() {
             </div>
           </section>
         ))}
+        <section className="concept-gallery" aria-label="Arte conceptual del universo">
+          <div className="concept-heading"><span className="chapter-tag">BESTIARIO Y LEYENDAS · ARTE CONCEPTUAL</span><h2>Habitantes de la <em>Trama.</em></h2></div>
+          <div className="concept-grid">
+            <figure className="concept-card concept-character"><img src="https://d8j0ntlcm91z4.cloudfront.net/user_3MJ8xX039ib9919oo3CFVd7NjMx/hf_20261119_134248_61a28044-93c1-4e96-8246-2aaeb7467b94.png" alt="Concepto artístico de un cultivador" loading="lazy"/><figcaption><span>01 · PERSONAJE</span><b>El caminante de las Raíces</b></figcaption></figure>
+            <figure className="concept-card concept-spirit"><img src="https://d8j0ntlcm91z4.cloudfront.net/user_3MJ8xX039ib9919oo3CFVd7NjMx/hf_20261119_134247_68136778-923c-41c4-a409-3f6a979ddc3c.png" alt="Criatura espiritual legendaria" loading="lazy"/><figcaption><span>02 · BESTIARIO</span><b>Espíritu guardián celestial</b></figcaption></figure>
+          </div>
+        </section>
         <section className="world-portal" id="juego">
           <div className="portal-heading">
             <span className="chapter-tag">EL ARCHIVO DE LA TRAMA · 09</span>
