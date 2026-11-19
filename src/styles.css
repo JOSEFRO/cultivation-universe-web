@@ -144,3 +144,18 @@ button,input{font:inherit}
  .world-hero{background-position:62% center;background-image:linear-gradient(90deg,rgba(4,7,15,.86),rgba(4,7,15,.48)),linear-gradient(0deg,rgba(4,7,15,.78),transparent 75%),url('/cultivation-universe-web/art/valle-primer-alba.svg')}
  .chapter-art-image{background-position:center}
 }
+
+
+/* Accessibility and viewport hardening */
+body{overflow-x:hidden}
+a:focus-visible{outline:2px solid #f0d39d;outline-offset:4px;border-radius:2px}
+.world-nav nav a{min-height:32px;display:inline-flex;align-items:center}
+.world-chapter{scroll-margin-top:76px}
+@media(max-width:430px){
+  .world-nav nav{gap:10px;font-size:8px;letter-spacing:.02em}
+  .world-brand{gap:7px;letter-spacing:.12em}
+  .world-hero h1{font-size:clamp(42px,11vw,54px)}
+}
+@media(prefers-reduced-motion:reduce){
+  .world-nav nav a,.enter-world{transition:none}
+}
