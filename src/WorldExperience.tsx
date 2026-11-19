@@ -7,14 +7,14 @@ import Lenis from 'lenis'
 gsap.registerPlugin(ScrollTrigger)
 
 const chapters = [
-  { id: 'origen', image: '/cultivation-universe-web/art/valle-primer-alba.svg', number: '01', title: 'El Origen', subtitle: 'Antes de que existieran los mundos', text: 'Siete principios despertaron en la Trama Primordial. De su resonancia nació todo lo que alguna vez tuvo nombre.', tag: 'PRÓLOGO · LA TRAMA PRIMORDIAL' },
-  { id: 'mortales', image: '/cultivation-universe-web/art/valle-primer-alba.svg', number: '02', title: 'Los Reinos Mortales', subtitle: 'Donde comienzan los caminos', text: 'Fortalezas, puertos, ciudades libres y cordilleras separadas por mares inmensos. Quien despierta una Raíz descubre que el mundo es mucho mayor que su tierra natal.', tag: 'LOS PRIMEROS REINOS' },
-  { id: 'sectas', image: '/cultivation-universe-web/art/santuario-raiz.svg', number: '03', title: 'Reinos y Órdenes', subtitle: 'El conocimiento también tiene fronteras', text: 'Casas soberanas, órdenes juramentadas y gremios de exploradores protegen sus archivos, reliquias y territorios. Ninguna facción conoce toda la verdad.', tag: 'PODER · JURAMENTOS · ALIANZAS' },
-  { id: 'antiguos', image: '/cultivation-universe-web/art/mar-antiguo.svg', number: '04', title: 'Mar de los Antiguos', subtitle: 'Las eras no desaparecen por completo', text: 'Bajo las mareas descansan fortalezas sumergidas, navíos petrificados y vestigios de civilizaciones anteriores a los primeros registros.', tag: 'HERENCIAS OLVIDADAS' },
-  { id: 'cielos', image: '/cultivation-universe-web/art/islas-celestes.svg', number: '05', title: 'Cielos Fragmentados', subtitle: 'Mundos que ya no comparten horizonte', text: 'Fragmentos de realidad flotan separados. Cruzarlos exige algo más que fuerza: comprensión del espacio y sus leyes.', tag: 'LOS LÍMITES DEL MUNDO' },
-  { id: 'raices', image: '/cultivation-universe-web/art/santuario-raiz.svg', number: '06', title: 'Los Siete Dominios', subtitle: 'Las leyes que sostienen la existencia', text: 'Origen, Vacío, Tiempo, Espacio, Vida, Muerte y Conciencia son las siete Raíces primordiales. Cada una expresa una ley de la Trama; ninguna contiene por sí sola toda la verdad.', tag: 'SIETE PRINCIPIOS' },
-  { id: 'vacio', image: '/cultivation-universe-web/art/islas-celestes.svg', number: '07', title: 'Frontera del Vacío', subtitle: 'Lo desconocido también observa', text: 'Más allá de las cartas conocidas, la realidad se vuelve incierta. Expediciones enteras han regresado con mapas imposibles y relatos que nadie logra confirmar.', tag: 'TERRITORIO NO CARTOGRAFIADO' },
-  { id: 'primordial', image: '/cultivation-universe-web/art/valle-primer-alba.svg', number: '08', title: 'Origen Primordial', subtitle: 'Toda respuesta abre otra pregunta', text: 'En el corazón de la Trama permanece el enigma de la Primera Ruptura: el instante en que las siete leyes se separaron y algo quedó al otro lado.', tag: 'EL MISTERIO CENTRAL' },
+  { id: 'origen', image: '/cultivation-universe-web/art/origen-primordial.svg', number: '01', title: 'El Origen', subtitle: 'Antes de que existieran los mundos', text: 'Siete principios despertaron en la Trama Primordial. De su resonancia nació todo lo que alguna vez tuvo nombre.', tag: 'PRÓLOGO · LA TRAMA PRIMORDIAL' },
+  { id: 'mortales', image: '/cultivation-universe-web/art/reinos-mortales.svg', number: '02', title: 'Los Reinos Mortales', subtitle: 'Donde comienzan los caminos', text: 'Fortalezas, puertos, ciudades libres y cordilleras separadas por mares inmensos. Quien despierta una Raíz descubre que el mundo es mucho mayor que su tierra natal.', tag: 'LOS PRIMEROS REINOS' },
+  { id: 'sectas', image: '/cultivation-universe-web/art/ordenes-juramentadas.svg', number: '03', title: 'Reinos y Órdenes', subtitle: 'El conocimiento también tiene fronteras', text: 'Casas soberanas, órdenes juramentadas y gremios de exploradores protegen sus archivos, reliquias y territorios. Ninguna facción conoce toda la verdad.', tag: 'PODER · JURAMENTOS · ALIANZAS' },
+  { id: 'antiguos', image: '/cultivation-universe-web/art/mar-de-los-antiguos.svg', number: '04', title: 'Mar de los Antiguos', subtitle: 'Las eras no desaparecen por completo', text: 'Bajo las mareas descansan fortalezas sumergidas, navíos petrificados y vestigios de civilizaciones anteriores a los primeros registros.', tag: 'HERENCIAS OLVIDADAS' },
+  { id: 'cielos', image: '/cultivation-universe-web/art/cielos-fragmentados.svg', number: '05', title: 'Cielos Fragmentados', subtitle: 'Mundos que ya no comparten horizonte', text: 'Fragmentos de realidad flotan separados. Cruzarlos exige algo más que fuerza: comprensión del espacio y sus leyes.', tag: 'LOS LÍMITES DEL MUNDO' },
+  { id: 'raices', image: '/cultivation-universe-web/art/siete-raices.svg', number: '06', title: 'Los Siete Dominios', subtitle: 'Las leyes que sostienen la existencia', text: 'Origen, Vacío, Tiempo, Espacio, Vida, Muerte y Conciencia son las siete Raíces primordiales. Cada una expresa una ley de la Trama; ninguna contiene por sí sola toda la verdad.', tag: 'SIETE PRINCIPIOS' },
+  { id: 'vacio', image: '/cultivation-universe-web/art/frontera-del-vacio.svg', number: '07', title: 'Frontera del Vacío', subtitle: 'Lo desconocido también observa', text: 'Más allá de las cartas conocidas, la realidad se vuelve incierta. Expediciones enteras han regresado con mapas imposibles y relatos que nadie logra confirmar.', tag: 'TERRITORIO NO CARTOGRAFIADO' },
+  { id: 'primordial', image: '/cultivation-universe-web/art/primera-ruptura.svg', number: '08', title: 'Origen Primordial', subtitle: 'Toda respuesta abre otra pregunta', text: 'En el corazón de la Trama permanece el enigma de la Primera Ruptura: el instante en que las siete leyes se separaron y algo quedó al otro lado.', tag: 'EL MISTERIO CENTRAL' },
 ]
 
 function createWorld(scene: THREE.Scene) {
@@ -77,8 +77,14 @@ export default function WorldExperience() {
     scene.fog = new THREE.FogExp2('#070a12', 0.018)
     const camera = new THREE.PerspectiveCamera(48, window.innerWidth / window.innerHeight, 0.1, 180)
     camera.position.set(0, 1.2, 15)
-    const renderer = new THREE.WebGLRenderer({ canvas, antialias: false, alpha: false, powerPreference: 'low-power' })
-    renderer.setPixelRatio(Math.min(window.devicePixelRatio, window.innerWidth < 700 ? 1 : 1.45))
+    let renderer: THREE.WebGLRenderer
+    try {
+      renderer = new THREE.WebGLRenderer({ canvas, antialias: false, alpha: false, powerPreference: 'low-power' })
+    } catch {
+      canvas.style.display = 'none'
+      return () => {}
+    }
+    renderer.setPixelRatio(Math.min(window.devicePixelRatio, window.innerWidth < 700 ? 1 : 1.25))
     renderer.setSize(window.innerWidth, window.innerHeight)
     renderer.outputColorSpace = THREE.SRGBColorSpace
     const ambient = new THREE.AmbientLight(0x9aaacb, 1.5)
@@ -86,18 +92,23 @@ export default function WorldExperience() {
     key.position.set(4, 5, 8)
     scene.add(ambient, key)
     const world = createWorld(scene)
-    let frame = 0
     let raf = 0
     const render = () => {
-      raf = requestAnimationFrame(render)
+      if (document.visibilityState !== 'visible') return
       if (!reduced) {
         world.group.rotation.y += 0.0008
         world.stars.rotation.y -= 0.00008
+        raf = requestAnimationFrame(render)
       }
       renderer.render(scene, camera)
-      frame++
     }
     render()
+    const onVisibilityChange = () => {
+      if (document.visibilityState === 'hidden') cancelAnimationFrame(raf)
+      else if (!reduced) render()
+      else renderer.render(scene, camera)
+    }
+    document.addEventListener('visibilitychange', onVisibilityChange)
 
     const lenis = reduced ? null : new Lenis({ lerp: 0.075, smoothWheel: true })
     const tick = (time: number) => { lenis?.raf(time * 1000) }
@@ -144,10 +155,12 @@ export default function WorldExperience() {
       camera.updateProjectionMatrix()
       renderer.setPixelRatio(Math.min(window.devicePixelRatio, window.innerWidth < 700 ? 1 : 1.45))
       renderer.setSize(window.innerWidth, window.innerHeight)
+      if (reduced) renderer.render(scene, camera)
     }
     window.addEventListener('resize', resize)
     return () => {
       window.removeEventListener('resize', resize)
+      document.removeEventListener('visibilitychange', onVisibilityChange)
       gsap.ticker.remove(tick)
       lenis?.destroy()
       ScrollTrigger.getAll().forEach((trigger) => trigger.kill())
